@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes" />
+    <script src="./jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./flexible.js"></script>
+    <meta content="fullscreen=yes,preventMove=no" name="ML-Config" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>礼物</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body,html{
+            height: 100%;
+        }
+       .gift1,.gift2{
+           position: absolute;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+       }
+       .gift1 img,.gift2 img{
+            width: 6.3rem;
+            height: 6.3rem;
+       }
+    </style>
+</head>
+<body>
+    <div class="gift1">
+        <img src="2.png">
+    </div>
+    <div class="gift2">
+        <img src="1.png">
+    </div>
+</body>
+<script>
+    $(".gift1").hide();
+    $(".gift2").hide();
+    setTimeout(function(){
+        $(".gift1").show(500);
+    },1000)
+    setTimeout(function(){
+        $(".gift1").hide(500);
+    },3000)
+    setTimeout(function(){
+        $(".gift2").show(500);
+    },4000)
+    
+</script>
+</html>
